@@ -8,6 +8,8 @@
 
 #include "functions.hpp"
 
+//Использовал тесты буста, потому что они у меня уже были и я ранее ими пользовался
+ы
 void writeFile(const std::filesystem::path& path, const std::string& data)
 {
     std::ofstream file(path, std::ofstream::binary);

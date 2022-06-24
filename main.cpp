@@ -3,9 +3,10 @@
 
 #include "functions.hpp"
 
+// местами дурацкий имена переменных, но решил, что в рамках тестового задания это нормально
 int main(int argc, const char** argv)
 {
-    if (argc != 4) {
+    if (argc != 4) { 
         std::cout << "The program requires 3 parameters: file path to read, write and string to delete\n";
         return 0;
     }

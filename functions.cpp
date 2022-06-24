@@ -32,7 +32,7 @@ std::vector<std::string> split(std::string str)
     return strs;
 }
 
-bool compareString(const std::string& str1, const std::string& str2)
+bool compareString(const std::string& str1, const std::string& str2)    //работает аналогично operator<
 {
     if (str1.size() < str2.size()) {
         return true;
@@ -71,6 +71,6 @@ void saveResult(const std::filesystem::path& path, const std::vector<std::string
         return;
     }
     for (auto& str : strs) {
-        of << str << std::endl;
-    }
+        of << str << std::endl; //в конце будет лишний переход на след строку, но в расках этого задания
+    }                           //я решил, что это это не будет проблемой
 }
